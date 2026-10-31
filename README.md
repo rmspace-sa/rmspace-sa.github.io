@@ -1,2 +1,1 @@
-# rmspace-sa.github.io
-RM SPACE COMPANY website
+Public website for RM SPACE COMPANY.
