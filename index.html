@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" translate="no">
+<html lang="en" translate="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RM SPACE COMPANY</title>
-  <meta name="description" content="RM SPACE COMPANY — شركة سعودية تبني تطبيقات الجوال والمنتجات الرقمية. A Saudi company building mobile apps and digital products.">
+  <meta name="description" content="RM SPACE COMPANY — A Saudi company building mobile apps and digital products. شركة سعودية تبني تطبيقات الجوال والمنتجات الرقمية">
   <meta name="theme-color" content="#0b0b0c">
   <style>
     :root {
@@ -57,12 +57,12 @@
         var(--bg);
     }
 
+    .page { direction: ltr; }
     #lang-ar:checked ~ .page { direction: rtl; }
-    #lang-en:checked ~ .page { direction: ltr; }
 
-    .i18n-en { display: none; }
-    #lang-en:checked ~ .page .i18n-en { display: revert; }
-    #lang-en:checked ~ .page .i18n-ar { display: none; }
+    .i18n-ar { display: none; }
+    #lang-ar:checked ~ .page .i18n-ar { display: revert; }
+    #lang-ar:checked ~ .page .i18n-en { display: none; }
 
     .wrap {
       width: min(var(--max), calc(100% - 2.4rem));
@@ -199,7 +199,6 @@
       align-items: center;
       justify-content: space-between;
       gap: 0.8rem;
-      margin-bottom: 0.45rem;
     }
 
     .product-name {
@@ -216,11 +215,6 @@
       color: var(--gold-soft);
       font-size: 0.72rem;
       letter-spacing: 0.04em;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
     }
 
     .contact-list {
@@ -301,8 +295,8 @@
   </style>
 </head>
 <body>
-  <input class="lang-input" type="radio" name="lang" id="lang-ar" checked>
-  <input class="lang-input" type="radio" name="lang" id="lang-en">
+  <input class="lang-input" type="radio" name="lang" id="lang-en" checked>
+  <input class="lang-input" type="radio" name="lang" id="lang-ar">
 
   <div class="page">
     <header class="wrap">
@@ -311,8 +305,8 @@
         <span class="brand-name">RM SPACE COMPANY</span>
       </a>
       <nav class="lang-switch" aria-label="Language">
-        <label for="lang-ar" lang="ar">العربية</label>
         <label for="lang-en" lang="en">English</label>
+        <label for="lang-ar" lang="ar">العربية</label>
       </nav>
     </header>
 
@@ -324,7 +318,7 @@
         </p>
         <h1 lang="en" dir="ltr">RM SPACE COMPANY</h1>
         <p class="lead">
-          <span class="i18n-ar" lang="ar">شركة سعودية تركّز على بناء تطبيقات الجوال والمنتجات الرقمية بمعيار عالمي.</span>
+          <span class="i18n-ar" lang="ar">شركة سعودية تركّز على بناء تطبيقات الجوال والمنتجات الرقمية بمعيار عالمي</span>
           <span class="i18n-en" lang="en">A Saudi company focused on building mobile apps and digital products.</span>
         </p>
         <div class="rule" aria-hidden="true"></div>
@@ -343,10 +337,6 @@
               <span class="i18n-en" lang="en">Coming soon</span>
             </span>
           </div>
-          <p>
-            <span class="i18n-ar" lang="ar">تطبيق سعودي يربط الناس بالبائعين القريبين منهم.</span>
-            <span class="i18n-en" lang="en">A Saudi app that connects people with nearby sellers.</span>
-          </p>
         </article>
       </section>
 
