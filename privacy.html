@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy | RM SPACE COMPANY</title>
+  <meta name="description" content="Privacy policy for the RM SPACE COMPANY website. This site does not collect personal data and does not use cookies or trackers.">
+  <meta name="theme-color" content="#0b0b0c">
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --bg-elevated: #131214;
+      --ink: #f4efe6;
+      --muted: #b4aaa0;
+      --gold: #c6a667;
+      --gold-soft: #e4d2a8;
+      --line: rgba(198, 166, 103, 0.28);
+      --line-strong: rgba(198, 166, 103, 0.5);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      --radius: 18px;
+      --max: 44rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    body {
+      font-family: "Segoe UI", "Noto Naskh Arabic", "Noto Sans Arabic", Tahoma, system-ui, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .lang-input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    .page {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      direction: ltr;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(198, 166, 103, 0.12), transparent 55%),
+        radial-gradient(circle at 90% 80%, rgba(198, 166, 103, 0.05), transparent 30%),
+        var(--bg);
+    }
+
+    #lang-ar:checked ~ .page { direction: rtl; }
+
+    .i18n-ar { display: none; }
+    #lang-ar:checked ~ .page .i18n-ar { display: revert; }
+    #lang-ar:checked ~ .page .i18n-en { display: none; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 2.4rem));
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.35rem 0 1.1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      min-width: 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .mark {
+      flex: 0 0 auto;
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      background: linear-gradient(180deg, rgba(198, 166, 103, 0.12), rgba(198, 166, 103, 0.03));
+    }
+
+    .brand-name {
+      font-size: 0.82rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .lang-switch {
+      display: flex;
+      direction: ltr;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.18rem;
+      background: rgba(19, 18, 20, 0.8);
+    }
+
+    .lang-switch label {
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 0.32rem 0.78rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      user-select: none;
+    }
+
+    #lang-ar:checked ~ .page label[for="lang-ar"],
+    #lang-en:checked ~ .page label[for="lang-en"] {
+      color: var(--bg);
+      background: var(--gold);
+      font-weight: 650;
+    }
+
+    main { flex: 1; }
+
+    .hero {
+      padding: 2.4rem 0 1.6rem;
+    }
+
+    .back {
+      margin: 0 0 1.4rem;
+    }
+
+    .back a {
+      color: var(--gold-soft);
+      text-decoration: none;
+      font-size: 0.88rem;
+    }
+
+    .back a:hover,
+    .back a:focus-visible {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      font-weight: 650;
+      line-height: 1.2;
+    }
+
+    .updated {
+      margin: 0 0 1.6rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .policy {
+      margin: 0 0 2.4rem;
+      padding: 1.3rem 1.35rem 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(198, 166, 103, 0.06), var(--bg-elevated) 42%);
+      box-shadow: var(--shadow);
+    }
+
+    .policy p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+    }
+
+    .policy p:last-child { margin-bottom: 0; }
+
+    .contact-line {
+      margin-top: 1.15rem;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-line a {
+      color: var(--gold-soft);
+      text-decoration: none;
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+
+    .contact-line a:hover,
+    .contact-line a:focus-visible {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      border-top: 1px solid var(--line);
+      padding: 1.15rem 0 1.4rem;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    footer a {
+      color: var(--gold-soft);
+      text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(var(--max), calc(100% - 1.6rem)); }
+      header { padding-top: 1.05rem; }
+      .hero { padding: 1.6rem 0 1.2rem; }
+      .brand-name { display: none; }
+      .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <input class="lang-input" type="radio" name="lang" id="lang-en" checked>
+  <input class="lang-input" type="radio" name="lang" id="lang-ar">
+
+  <div class="page">
+    <header class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark">RM</span>
+        <span class="brand-name">RM SPACE COMPANY</span>
+      </a>
+      <nav class="lang-switch" aria-label="Language">
+        <label for="lang-en" lang="en">English</label>
+        <label for="lang-ar" lang="ar">العربية</label>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <p class="back">
+          <a href="index.html">
+            <span class="i18n-en" lang="en">Back to home</span>
+            <span class="i18n-ar" lang="ar">العودة إلى الصفحة الرئيسية</span>
+          </a>
+        </p>
+        <h1>
+          <span class="i18n-en" lang="en">Privacy</span>
+          <span class="i18n-ar" lang="ar">سياسة الخصوصية</span>
+        </h1>
+        <p class="updated">
+          <span class="i18n-en" lang="en">Last updated October 31, 2026</span>
+          <span class="i18n-ar" lang="ar">آخر تحديث 31 أكتوبر 2026</span>
+        </p>
+      </section>
+
+      <section class="wrap">
+        <div class="policy">
+          <p>
+            <span class="i18n-en" lang="en">The RM SPACE COMPANY website does not collect personal data.</span>
+            <span class="i18n-ar" lang="ar">موقع RM SPACE COMPANY لا يجمع بيانات شخصية</span>
+          </p>
+          <p>
+            <span class="i18n-en" lang="en">This website does not use cookies or trackers.</span>
+            <span class="i18n-ar" lang="ar">لا يستخدم هذا الموقع ملفات تعريف الارتباط أو أدوات التتبع</span>
+          </p>
+          <p>
+            <span class="i18n-en" lang="en">Contact details shared voluntarily by email are used only to reply.</span>
+            <span class="i18n-ar" lang="ar">تُستخدم بيانات التواصل التي تُرسل طوعًا عبر البريد للرد فقط</span>
+          </p>
+          <p>
+            <span class="i18n-en" lang="en">Each app has its own privacy policy.</span>
+            <span class="i18n-ar" lang="ar">لكل تطبيق سياسة خصوصية خاصة به</span>
+          </p>
+          <p class="contact-line">
+            <span class="i18n-en" lang="en">Contact: </span>
+            <span class="i18n-ar" lang="ar">للتواصل: </span>
+            <a href="mailto:contact@nearby-info.com">contact@nearby-info.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-row">
+        <span dir="ltr">© RM SPACE COMPANY</span>
+        <a href="index.html">
+          <span class="i18n-en" lang="en">Home</span>
+          <span class="i18n-ar" lang="ar">الرئيسية</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
